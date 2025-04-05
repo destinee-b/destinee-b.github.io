@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Mining</title>
+    <style>
+      body {
+        height: 100%;
+        background-image: linear-gradient(#e0cfcd, #b7918c);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .page-name {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        color: #a97a75;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      header {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+        background-color: #f2f2f2;
+        border-radius: 1rem;
+        box-shadow: 2px 9px 7px #22222233;
+        text-align: center;
+      }
+      main {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        height: max-content;
+        background-color: #f2f2f2;
+        border-radius: 2rem;
+        box-shadow: 2px 9px 5px #22222288;
+      }
+      img {
+        width: auto;
+        vertical-align: middle;
+        height: 72px;
+        object-fit: contain;
+        vertical-align: middle;
+      }
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        margin: auto;
+        margin-bottom: 5px;
+        color: #a97a75;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 10px;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      hr {
+        border: 0;
+        height: 5px;
+        background: #a97a75;
+        border-radius: 5px;
+        margin: auto;
+      }
+      #services {
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul li {
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      .contact-info {
+        text-align: center;
+        font-size: 18px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 10px;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      footer {
+        text-align: center;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-bottom: 1rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #413b3b;
+        font-size: 28px;
+      }
+      button {
+        background-color: #e6d0cb;
+        color: #5c3d37;
+        font-family: "Georgia", serif;
+        border: 2px solid #c2a29e;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 22px;
+      }
+
+      button:hover {
+        background-color: #d5b6af;
+        transform: translateY(-2px);
+      }
+
+      button:focus {
+        outline: none;
+        box-shadow: 0 0 5px #c2a29e;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul li {
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 20px;
+      }
+      .notebook-frame {
+        width: 100%;
+        height: 600px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+        background-color: #f2f2f2;
+        display: block;
+        margin: auto;
+      }
+    </style>
+  <body>
+    <header>
+      <h1
+        class="page-name"
+        style="
+          font-size: 32px;
+          margin: auto;
+          text-align: center;
+          font-size: 42px;
+        "
+      >
+        ⚛ Project 3 - Destinee Brewer⚛
+      </h1>
+      <hr style="width: 80%; margin-bottom: 3px" />
+      <nav>
+        <a href="index.html"> <button>Home</button></a>
+        ୨ৎ
+        <a href="project1.html"> <button>Project 1</button></a>
+        ୨ৎ
+        <a href="project2.html"> <button>Project 2</button></a>
+        ୨ৎ
+        <a href="project3.html"> <button>Project 3</button></a>
+        ୨ৎ
+      </nav>
+    </header>
+    <main>
+      <h2>Introduction</h2>
+      <hr style="width: 100%" />
+      <p>For this project, I wanted to predict something that has always interested me. I chose to predict crop yield based on environmental and agriculture factors such as soil, rain, etc,. My dataset is from Kaggle. You can view it <a href="https://www.kaggle.com/datasets/samuelotiattakorah/agriculture-crop-yield?resource=download"> here. </a> This is a great solution to helping agriculture works plan for better food supply and demand, optimization for the materials they use like fertilizer and soil, and also be able to prepare for droughts or rough seasons. The dataset contains the following columns:</p>
+      <ul>
+        <li>☀︎ Region</li>
+        <li>☀︎ Soil_Type</li>
+        <li>☀︎ Crop</li>
+        <li>☀︎ Rainfall_mm</li>
+        <li>☀︎ Temperature_Celsius</li>
+        <li>☀︎ Fertilizer_Used</li>
+        <li>☀︎ Irrigation_Used</li>
+        <li>☀︎ Weather_Condition</li>
+        <li>☀︎ Days_to_Harvest</li>
+        <li>☀︎ Yield_tons_per_hectare</li>
+      </ul>
+      <h2>What is Regression?</h2>
+      <hr style="width: 100%" />
+      <p>Regression is a statistical method used to  models the relationship between a target variable and a feature (independent variables). It helps predict the value of a dependent variable based on the values of the independent variables. Linear regression will assume a linear relationship between crop yield and independent variables like rainfall, temperature, etc,. Since there was a positive coefficient for rainfall, that means that an increase in rainfall is associated with a higher crop yield. A negative coefficient like temperature had, indicates a negative effect on crop yield. I think the math is:
+        y (crop yield) = b0 (the intercept value of y when all x's are 0) + b1 (the coefficient for rainfall) * x1 (rainfall) + b2 (the coefficient for temperature) * x2 (temperature) + b3 (the coefficient for fertilizer used) * x3 (fertilizer used) + b4 (the coefficient for irrigation used) * x4 (irrigation used) + b5 (the coefficient for weather condition) * x5 (weather condition) + b6 (the coefficient for days to harvest) * x6 (days to harvest)
+    <br></br>
+    The math could definitely be wrong but know I tried, haha.
+    </p>
+      </p>
+      <h2>Data Understanding and Pre-Processing</h2>
+      <hr style="width: 100%" />
+      <p>I first explored the dataset, viewed it, checked for missing values, and so on to help get a general understanding and visualization of the dataset. I visualized with  boxplots for rainfall, temperature, and yield to identify any outliers. I think checked for unique values in categorical columns like soil and crop, i removed the duplicates, handled missing values by filling them with the mean of their column. Earlier I had did basic exploration of the dataset so I could fill the missing values with the mean I had already calculated prior. I also did some research to scale the data, I read it helped increase model performance. I then seperates the features and target, built, train, tested, and predicted the model. I used MSE, RMSE, and R squared to evaluation the model, then did a scatterplot, histogram, and feature coefficients to visiualize the importance of coefficients. 
+        <br>
+        I used a lot of different graphs and charts to be able to see the full story of the dataset. The correlation heatmap helped me view positive and negative correlations between the features and target. I also used a pairplot to see the distribution of the features and target, and how they relate to each other. I used a barplot to show the average yield per region, and a boxplot to show the distribution of yield per crop. I also used a violin plot to show the distribution of yield per soil type. I think these visualizations helped me understand the dataset better, and identify any patterns or trends that could help me predict crop yield.
+        <br>
+        I did have to do feature transformation since there were several categorical variables in the dataset. I used one-hot encoding to convert the categorical variables into numerical variables. I also used label encoding to convert the categorical variables into numerical variables. I think this helped me build a better model since the model could understand the data better. I did not create any new features, I thought about a few but I did not implement them.
+      </p>
+      <h2>Evaluation / Experiment 1 </h2>
+      <hr style="width: 100%" />
+      <p>For the first experiment, I used linear regression of and trained the model using all numeric values and encoded features. I did a 80%/20% split dataset to train and test. The metrics I used to evaluate were MSE, RMSE, and Root Squared. I did the prediction using a scatterplot of actual vs predicted. The results did show that the predictions generally followed the correct trend and most points were all around the prediction line. </p>
+      <h2>Experiment 2</h2>
+      <hr style="width: 100%" />
+      <p>For the second experiment, I wanted to try Ridge Regression to see if the model would perform better with more regularization. I know ridge can help with overfitting by decreasing the weight and impact of the less influential features. Since I have many features, I thought this could be a good idea. My MSE, RMSE, and R squared stayed the exact same with the new model. Ridge MSE: 0.25
+        Ridge RMSE: 0.50
+        Ridge R²: 0.91. This was important insightt to me as this means my original models was already very stable and regularization didn't make any improvement and was in the end not really needed. It also reinforced that linear regression was already a solid, and good model to work with. </p>
+      <h2>Experiment 3</h2>
+      <hr style="width: 100%" />
+      <p>Since I hadn't seen any change from experiment 1 to 2, I decided to do something different and test a nonlinear model to see if it would have any effect. I decided to do a decision tree regressor since they can model complex relationships. My thought process was the different relationships crop yield has with all the many features. My MSE changed from 0.25 with Regression to 0.53 with Decision Tree. RMSE from 0.50 to 0.73 and R squared from 0.91 to 0.82. This shows that the decision tree actually did worse than the linear models, I believe it may have been due to the decision trees trying to see more complex relationships and possibly had overfitting. This was a great ending as it solidifed that this dataset is best worked on with a linear regression model.</p>
+      <h2>Impact</h2>
+      <hr />
+      <p>There are several impacts this dataset can help with. It can help agriculture workers with supply, demand, droughts, optimization for their supplies like fertilizer and soil. This could also make workers possibly too reliant on the data, when some things can't be predicted like a very bad storm or something that could be devestating. It overall has positives and negatives. It is a good source, but nothing to become too reliant on.</p>
+      <h2>Conclusion</h2>
+      <hr />
+      <p>Overall, I learned a lot from this project. I had a lot of fun doing research and looking at the documentation. I did struggle with trying to figure out how to convert the categorical values into non numerical values. It was something I have done in code several times for web development, but never with data relation. I think it was a great learning experience for future data work, and I enjoyed learning the linear regression not in a math room haha!</p>
+      <h2>References</h2>
+      <hr />
+      <p>I added the references in the comments of my code,  but almost all of my resources came from the official Scikit-learn documentation. It was full of information and went into great detail. </p>
+      <iframe class="notebook-frame" src="cropyield.html" width="100%" height="600px"></iframe>
+      <h2></h2>
+      <hr />
+      <p></p>
+      <br />
+      <hr />
+    </main>
+    <footer
+      style="
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: auto;
+        font-size: 16px;
+      "
+    >
+      © 2024 Destinee Digital. All rights reserved.
+    </footer>
+  </body>
+</html>
